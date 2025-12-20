@@ -127,7 +127,7 @@ export function AppVivace({ onBack }: AppVivaceProps) {
       </div>
 
       <div className="step-indicator">
-        Étape {currentStep + 1} sur {TOTAL_STEPS}
+        Étape {currentStep} sur {TOTAL_STEPS}
       </div>
 
       {currentStep < TOTAL_STEPS && (
