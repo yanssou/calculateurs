@@ -115,7 +115,7 @@ export function AppVivace({ onBack }: AppVivaceProps) {
     <div className="app">
       <header className="app-header">
         <button onClick={onBack} className="back-button">← Retour au menu</button>
-        <h1>Calculateur de Massif Vivace</h1>
+        <h1>Calculateur de<br />Massif Vivace</h1>
         <p className="subtitle">Estimation de prix pour votre projet de massif de vivaces</p>
       </header>
 
