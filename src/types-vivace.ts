@@ -4,6 +4,7 @@ export interface VivaceKit {
   id: number;
   titre: string;
   sousTitre: string;
+  prixMoyenPlante: number; // Prix moyen d'achat d'une plante en godet de 9cm (HT)
   plantes: Array<{
     nom: string;
     type: string;

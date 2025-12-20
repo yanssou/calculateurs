@@ -116,8 +116,11 @@ function calculerPrixAchatVivace(
   data: CalculateurVivaceData,
   calculs: CalculsIntermediairesVivace
 ): PrixAchatVivace {
+  // Récupérer le kit choisi pour obtenir le prix moyen
+  const kit = KITS_VIVACE.find(k => k.id === data.kitId) || KITS_VIVACE[0];
+  
   // Prix végétaux = (nombre de plantes × prix moyen d'achat d'une plante en godet de 9cm)
-  const vegetaux = calculs.nombrePlantes * CONSTANTS_VIVACE.PRIX_MOYEN_PLANTE_GODET_9CM;
+  const vegetaux = calculs.nombrePlantes * kit.prixMoyenPlante;
 
   // Prix terreau = (nombre de sacs de terreau × prix sac de terreau)
   const terreau = calculs.nombreSacsTerreau * CONSTANTS_VIVACE.PRIX_SAC_TERREAU_40L;
