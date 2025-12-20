@@ -8,6 +8,25 @@
 .app-header {
   text-align: center;
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #95a5a6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #7f8c8d;
 }
 
 .app-header h1 {
@@ -82,7 +101,7 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-}
+  }
 
 .input-group {
   margin-bottom: 1.5rem;
@@ -138,7 +157,7 @@
   box-sizing: border-box;
   background-color: white;
   cursor: pointer;
-}
+  }
 
 .kit-select:focus {
   outline: none;
@@ -150,6 +169,71 @@
   margin-top: 0.5rem;
   color: #7f8c8d;
   font-size: 0.85rem;
+}
+
+.input-hint {
+  display: block;
+  margin-top: 0.5rem;
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.suggested-values {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.suggested-label {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.suggested-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.suggested-button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  color: #2c3e50;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.suggested-button:hover {
+  border-color: #4a90e2;
+  background-color: #f0f7ff;
+}
+
+.suggested-button.active {
+  border-color: #4a90e2;
+  background-color: #4a90e2;
+  color: white;
+}
+
+.recommended-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #27ae60;
+  border-radius: 8px;
+  background: white;
+  color: #27ae60;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.recommended-button:hover {
+  background-color: #27ae60;
+  color: white;
 }
 
 .radio-group {
@@ -377,7 +461,7 @@
   color: #2c3e50;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-}
+  }
 
 .kit-subtitle {
   color: #7f8c8d;
